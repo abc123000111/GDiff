@@ -21,37 +21,14 @@ Requirements:
 # Using GDiff
 
 Generally GDiff can be configured and executed using the following command:
-
-```bash
-java -jar GDsmith.jar [database] --[database_option1] --[database_option2] ...
-```
-
-Here are some examples of database options:
-
-```
---port 7687 			//the port of the database driver is 7687
---username xxx			//the user of the database is "xxx"
---password ###			//the password of the user is "####"
---oracle ORACLE_NAME	//use the oracle "ORACLE_NAME"
-```
-
-Note that GDiff will not automatically create database user, as a result, you might need to manually create a user and grant it with the privilege for remote connection, executing queries, writing to databases and creating/deleting new databases.
-
-Here are the set of databases supported by GDiff:
-
-```
-neo4j
-redisgraph
-memgraph
-```
-
-You can use these database names ([database]) to indicate which database you want to test.
-
 ```bash
 java -cp GDsmith.jar gdsmith.Main --num-threads 1 composite --config [the relative path to the configuration file] --oracle MCTS
 ```
 
-The configuration file in written in json form and is similar to the database_options, the difference is that you cannot specify an oracle for them.
+Note that GDiff will not automatically create database user, as a result, you might need to manually create a user and grant it with the privilege for remote connection, executing queries, writing to databases and creating/deleting new databases.
+
+
+The configuration file in written in json form.
 
 ```json
 {
@@ -68,6 +45,14 @@ The configuration file in written in json form and is similar to the database_op
     "password": "gdiff"
   }
 }
+```
+
+Here are the set of databases supported by GDiff:
+
+```
+neo4j
+redisgraph
+memgraph
 ```
 
 # Overview of GDiff IR
