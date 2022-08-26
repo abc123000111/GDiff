@@ -1,0 +1,2 @@
+MATCH (n0), (n1)-[r0 *..3]-(n2 :L2) WHERE ((n2.k13) <= (n2.k13)) WITH min('r') AS a0, n2, min('c9XMP') AS a1 WHERE ((n2.k18) <= 1590293959) OPTIONAL MATCH (n2) OPTIONAL MATCH (n2)-[r1 *]-(n3 :L5) WITH (n3.k36) AS a2, max('') AS a3, max('L') AS a4, sum(-243320739) AS a5, a1 ORDER BY a4 DESC WHERE (false AND true) RETURN 2
+[60001, 32]

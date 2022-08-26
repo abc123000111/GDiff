@@ -1,0 +1,2 @@
+OPTIONAL MATCH (n0)<-[r0 :T5 *..2]-(n1), (n2) WHERE true OPTIONAL MATCH (n3)-[r1 :T3 *]-(n4 :L4), (n0) OPTIONAL MATCH (n5)-[r2 :T1 *]-(n6 :L2) WHERE (n4.k32) OPTIONAL MATCH (n7)-[r3 *..1]-(n8 :L6) OPTIONAL MATCH (n6), (n1) WHERE ((n8.k42) ENDS WITH 'paCkv') WITH DISTINCT (n4.k33) AS a0, min('zerdYO5Dm') AS a1, max('xq4xH') AS a2 MATCH (n9 :L5) OPTIONAL MATCH (n9) RETURN a1, (n9.k34) AS a3, a0, (n9.k34) AS a4
+[49491, 24783]

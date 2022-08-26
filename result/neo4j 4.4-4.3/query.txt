@@ -1,0 +1,2 @@
+MATCH (n0 :L6)-[r0 *3..]-(n1 :L0), (n2)-[r1 *..1]->(n3) MATCH (n0) WITH r0, n2 MATCH (n2) RETURN 0
+[60001, 105]

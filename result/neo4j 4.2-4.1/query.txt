@@ -1,0 +1,2 @@
+MATCH (n0)-[r0 *3..]->(n1 :L2), (n2)<-[r1 *]-(n3) WITH n1 ORDER BY (n1.k13) DESC WHERE true MATCH (n1) RETURN 0 
+[60001,128]
