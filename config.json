@@ -1,0 +1,14 @@
+{
+  "redisgraph@2.10.1": {
+    "port": 6379,
+    "host": "localhost",
+    "username": "redisgraph",
+    "password": "gdiff"
+  },
+  "memgraph@2.3.1": {
+    "port": 7687,
+    "host": "localhost",
+    "username": "memgraph",
+    "password": "gdiff"
+  }
+}
