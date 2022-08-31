@@ -20,7 +20,9 @@ Requirements:
 
 # Using GDiff
 
-Generally GDiff can be configured and executed using the following command:
+1. Install the GDBs under test first.
+
+2. Generally GDiff can be configured and executed using the following command:
 ```bash
 java -cp GDsmith.jar gdsmith.Main --num-threads 1 composite --config [the relative path to the configuration file] --oracle MCTS
 ```
