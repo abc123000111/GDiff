@@ -1,6 +1,6 @@
 # GDiff
 
-We propose GDiff, to the best of our knowledge the first automated approach to conduct differential performance testing of GDBs.
+We propose GDiff, to the best of our knowledge the first automated approach to perform differential performance testing of GDBs.
 
 # Getting Started
 
@@ -17,6 +17,7 @@ Requirements:
     * cypher: the openCypher AST
     * support for different databases[Neo4j, RedisGraph, ...]
 * out: the executable jar file GDsmith.jar
+* result: the test input revealing the largest joint performance difference for each pair of GDBs under test
 
 # Using GDiff
 
@@ -25,6 +26,11 @@ Requirements:
 2. Generally GDiff can be configured and executed using the following command:
 ```bash
 java -cp GDsmith.jar gdsmith.Main --num-threads 1 composite --config [the relative path to the configuration file] --oracle MCTS
+```
+
+For example:
+```bash
+java -cp GDsmith.jar gdsmith.Main --num-threads 1 composite --config config.json --oracle MCTS
 ```
 
 Note that GDiff will not automatically create database user, as a result, you might need to manually create a user and grant it with the privilege for remote connection, executing queries, writing to databases and creating/deleting new databases.
